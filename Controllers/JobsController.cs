@@ -24,11 +24,6 @@ namespace hangfireDemo.Controllers
              *  *  *  *  *  <command to be executed คำสั่งหรือ path ไฟล์ที่จะเรียกใหทำงาน>
 
          */
-        private readonly IBackgroundJobClient _backgroundJob;
-        public JobsController(IBackgroundJobClient backgroundJob)
-        {
-            _backgroundJob = backgroundJob;
-        }
         [HttpPost]
         public string Test()
         {
